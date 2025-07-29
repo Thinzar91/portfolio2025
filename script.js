@@ -10,6 +10,16 @@ const scrollTrigger = () => {
   });
 };
 
+// navbar
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY === 0) {
+      navbar.style.position = 'fixed';
+    } else {
+      navbar.style.position = 'static';
+    }
+  });
+
 // Resume button
 // const btn = document.getElementById("resumeBtn","experienceBtn");
 // const container = document.getElementById("pdfContainer1","pdfContainer2");
@@ -101,3 +111,6 @@ const filterButtons = document.querySelectorAll('.filter-btn');
       });
     });
   });
+
+
+//js
