@@ -9,16 +9,19 @@
   <meta name="description" content="ポートフォリオのWebサイトです。">
   <meta name="keywords" content="ポートフォリオ,PORTFOLIO,Portfolio,portfolio">
   <link rel="stylesheet" href="style.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kaisei+Decol&family=M+PLUS+Rounded+1c&family=Niconne&family=Noto+Serif+JP:wght@200..900&family=Train+One&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Italiana&family=Kaisei+Decol&family=M+PLUS+Rounded+1c&family=Niconne&family=Noto+Serif+JP:wght@200..900&family=Train+One&display=swap" rel="stylesheet"></head>
 <body>
 
   <header class="navbar">
     <div class="nav-container">
-      <h1 class="logo"><a href="#">Thinzar's Portfolio</a></h1>
+      <a href="#"><img src="images/logo.png" alt="Site Logo" class="site-logo" /></a>
 
       <!-- ハンバーガー -->
       <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -29,10 +32,10 @@
 
       <!-- メニュー本体 -->
       <nav class="nav-menu" id="navMenu">
-          <a href="index.html">ホーム</a>
-          <a href="index.html#about">自己紹介</a>
-          <a href="index.html#projects">プロジェクト</a>
-          <a href="#contact">お問い合わせ</a>
+          <a href="#about">About me</a>
+          <a href="#experience">Experience</a>
+          <a href="myworks.html">My Works</a>
+          <a href="#contact">Contact</a>
         </nav>
     </div>
   </header>
@@ -40,28 +43,33 @@
   <section id="about" class="hero fade-in">
     <div class="container hero-content">
       <div class="hero-text">
+        <h2>About me<span>自己紹介</span></h2>
         <h1>こんにちは、私は <span class="highlight">Thinzar Phyo</span> です。</h1>
         <p class="lead">ミャンマー出身、日本在住のWebデザイナーです。<br>外国人支援業務やIT企業での経験を活かし、
           ユーザーに伝わる・使いやすいデザインを心がけています。これまでに企業バナー、LPデザイン、レスポンシブ
           サイト制作など多様な案件に関わってきました。グローバルな視点と繊細な感性を活かし、「伝えるデザイン」をご提案します。</p>
-        <!-- <a href="webdesign.html" class="btn">作品を見る</a> -->
+        <a href="myworks.html" class="btn">作品を見る</a>
       </div>
+
+
       <div class="hero-image">
-        <img src="images/web_1.jpg" alt="ThinZarの写真">
+        <img src="images/profile.jpg" alt="ThinZarの写真">
       </div>
     </div>
   </section>
 
 <!--Experience section -->
 <section id="experience" class="experience fade-in">
-        <h2>経歴</h2>
+        <h2>Experience<span>経歴</span></h2>
          <div class="timeline">
            <ul>
              <li>
                <div class="content">
                  <h3>株式会社ベル・フルール<br>EC/デザイン部にてWebデザイナー兼コーダーとして活躍</h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-               </div>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                   when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                 </div>
                <div class="time">
                  <h4>2020.1~2023.6</h4>
                </div>
@@ -69,9 +77,11 @@
 
              <li>
                <div class="content">
-                 <h3>Winスクールにて<br>"Webマスターコース"の学習</h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-               </div>
+                 <h3>Winスクールへ通学<br>"Webマスターコース"を習得</h3>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                   when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
                <div class="time">
                  <h4>2022.1~2022.11</h4>
                </div>
@@ -84,7 +94,7 @@
 
 
         <section id="skills" class="skills fade-in">
-          <h2>スキル</h2>
+          <h2>Skills<span>スキル</span></h2>
             <div class="sf-skillbars">
 
             <div class="sf-skill">
@@ -171,59 +181,64 @@
 
           <!-- Projects Section -->
           <section id="projects" class="projects fade-in">
-            <h2>プロジェクト</h2>
+            <h2>My Works<span>デザイン・ギャラリー</span></h2>
             <div class="projects-grid">
               <div class="project-card">
-                <a href="webdesign.html"><img src="images/m-bellesfleurs.png" alt="ウェブデザイン" /></a>
-                <h3>Webデザイン</h3>
+                <a href="myworks.html"><img src="images/m-bellesfleurs.png" alt="ウェブデザイン" /></a>
+                <h3>WEB・UI/UX デザイン</h3>
                 <p>プロジェクトの簡単な説明をここに記載します。</p>
                 <a href="webdesign.html" class="btn">作品を見る</a>
               </div>
               <div class="project-card">
-                <a href="artwork.html"><img src="images/m-bellesfleurs.png" alt="アートワーク" /></a>
-                <h3>アートワーク</h3>
+                <a href="visual1.html"><img src="images/m-bellesfleurs.png" alt="アートワーク" /></a>
+                <h3>ビジュアル広告系デザイン</h3>
                 <p>プロジェクトの簡単な説明をここに記載します。</p>
-                <a href="artwork.html" class="btn">作品を見る</a>
+                <a href="visual1.html" class="btn">作品を見る</a>
+              </div>
+              <div class="project-card">
+                <a href="visual2.html"><img src="images/m-bellesfleurs.png" alt="アートワーク" /></a>
+                <h3>ビジュアルアート・ブランド表現</h3>
+                <p>プロジェクトの簡単な説明をここに記載します。</p>
+                <a href="visual2.html" class="btn">作品を見る</a>
               </div>
             </div>
           </section>
 
-  <!-- Contact Section -->
-  <a name = "contact"></a>
-  <section id="contact" class="contact fade-in">
-    <h2>お問い合わせ</h2>
-      <form action="https://formspree.io/f/meokbpnj" method="POST">
-      <input type="text" name="name" placeholder="お名前" required / style="margin-top: 20px;"><br><br>
-      <input type="email" name="email" placeholder="メールアドレス" required /><br><br>
-      <textarea name="message" placeholder="メッセージ" rows="5"></textarea>
-      <button type="submit">送信</button>
-      </form>
-  </section>
+          <!-- Contact Section -->
+          <a name = "contact"></a>
+          <section id="contact" class="contact fade-in">
+            <h2>Contact<span>お問い合わせ</span></h2>
+              <form action="https://formspree.io/f/meokbpnj" method="POST">
+              <input type="text" name="name" placeholder="お名前" required / style="margin-top: 20px;"><br><br>
+              <input type="email" name="email" placeholder="メールアドレス" required /><br><br>
+              <textarea name="message" placeholder="メッセージ" rows="5"></textarea>
+              <button type="submit">送信</button>
+              </form>
+          </section>
 
-  <!-- Resume Section -->
-  <section id="resume" class="resume fade-in">
+          <!-- Resume Section -->
+          <section id="resume" class="resume fade-in" style="display: none;">
+          <button id="resumeBtn">レジュメ（表示）</button>
+          <div id="pdfContainer1" style="display: none; margin-top: 20px;">
+          <!-- <div id="pdfContainer1" style="display: none; margin-top: 20px;"> -->
+            <iframe
+              src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
+              width="100%"
+              height="600px"
+              style="border: 1px solid #64ffda; border-radius: 6px;"
+            ></iframe>
+          </div>
 
-  <button id="resumeBtn">レジュメ（表示）</button>
-  <div id="pdfContainer1" style="display: none; margin-top: 20px;">
-  <!-- <div id="pdfContainer1" style="display: none; margin-top: 20px;"> -->
-    <iframe
-      src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
-      width="100%"
-      height="600px"
-      style="border: 1px solid #64ffda; border-radius: 6px;"
-    ></iframe>
-  </div>
-
-  <button id="careerBtn">職務経歴書（表示）</button>
-  <div id="pdfContainer2" style="display: none; margin-top: 20px;">
-    <iframe
-      src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
-      width="100%"
-      height="600px"
-      style="border: 1px solid #64ffda; border-radius: 6px;"
-    ></iframe>
-  </div>
-</section>
+          <button id="careerBtn">職務経歴書（表示）</button>
+          <div id="pdfContainer2" style="display: none; margin-top: 20px;">
+            <iframe
+              src="https://designstudiobys.wordpress.com/wp-content/uploads/2025/07/240422e5b1a5e6adb4e69bb8_e38386e382a3e383b3e382b6e383bce38394e383a7e383bc.pdf" download
+              width="100%"
+              height="600px"
+              style="border: 1px solid #64ffda; border-radius: 6px;"
+            ></iframe>
+          </div>
+        </section>
 
   <!-- Sidebar Social Icons -->
   <div class="social-sidebar">
