@@ -87,6 +87,11 @@ section h2 span {
   margin-bottom: 5px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .highlight {
   color: #77c7d1;
 }
