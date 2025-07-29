@@ -266,7 +266,7 @@ section h2 span {
 /* テキスト側 */
 .hero-text {
   flex: 1;
-  min-width: 380px;
+  min-width: 320px;
 }
 
 /* 画像側 */
@@ -277,7 +277,7 @@ section h2 span {
 
 .hero-image img {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   /* border-radius: 8px;
   border: 0px solid #77c7d1; */
