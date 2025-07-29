@@ -127,13 +127,13 @@ section h2 span {
   align-items: center;
 }
 
-/* .logo a {
+.logo a {
   font-family: "Italiana", sans-serif;
   color: #4b5357;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: blink;
-} */
+}
 
 .site-logo {
   height: 75px;
