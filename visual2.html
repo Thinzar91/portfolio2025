@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Works>ビジュアルアート・ロゴデザイン</title>
+  <title>My Works | ビジュアルアート・ロゴデザイン</title>
   <link rel="icon" sizes="500x500" href="images/favicon.ico" id="favicon">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
   <meta name="description" content="ポートフォリオのWebサイトです。">
@@ -32,7 +32,7 @@
       <!-- メニュー本体 -->
       <nav class="nav-menu" id="navMenu">
           <a href="index.html#about">About me</a>
-          <a href="index.html#experience">Experience</a>
+          <a href="index.html#experience">My Experience</a>
           <a href="myworks.html">My Works</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -40,72 +40,114 @@
   </header>
 
   <section class="myworks">
-  <p><a href="myworks.html">My Works</a> > Visual Art & Logo Design</p>
-  <h2>Visual Art & Logo Design<span>ビジュアルアート・ロゴデザイン</span></h2>
-  <div class="filter-buttons">
-    <a href="#illustration"><button class="filter-btn" data-filter="Illustration">Illustration</button></a>
-    <a href="#logo"><button class="filter-btn" data-filter="Logo Design">Logo Design</button></a>
-  </div>
-</section>
+    <p><a href="myworks.html">My Works</a> | <a href="webdesign.html">Web & UI/UX Design</a> | <a href="visual1.html">Visual Ad Design</a> | <a href="#" class="highlight">Visual Art & Logo Design</a></p>
+    <h2>Visual Art & Logo Design<span>ビジュアルアート・ロゴデザイン</span></h2>
+    <div class="filter-buttons">
+      <a href="#logo"><button class="filter-btn" data-filter="Logo Design">Logo Design</button></a>
+      <a href="#illustration"><button class="filter-btn" data-filter="Illustration">Illustration</button></a>
+    </div>
+  </section>
 
-<!-- design section -->
-<section id="logo" class="design fade-in" style="background-color: #f9f9f9;">
+<!-- Logo design section -->
+<section id="logo" class="design fade-in" style="background-color: #fdfeff;">
   <h1><span>LOGO</span> DESIGN</h1>
   <div class="design-container">
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
+    <div class="design-img">
+      <img src="images/eG_logo.jpg" alt="Logo design1" onclick="openModal(this, 'modal-logo1')">
     </div>
+
+    <!-- モーダル1 -->
+    <div id="modal-logo1" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img-logo1">
+    </div>
+
     <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
+      <h3>eleGREENS – Enjoy Gardening</h3>
       <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
+      <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+      <span>デザインの特徴</span>：<br>
+      <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。<br>
+      <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br>
+      <strong>• モックアップ展開</strong>：マグカップ、エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+    </p>
+      <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
     </div>
   </div>
 
+  <!-- 2つ目の作品 -->
   <div class="design-container">
-    <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
-      <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
-    </div>
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
-    </div>
-  </div>
+      <div class="design-info">
+        <h3>JAYIT – Japan Information Tips for You</h3>
+        <p class="description">
+          <span>ブランド概要</span>：<strong>JAYIT</strong>は、日本で生活するミャンマー人向けに、生活ルールや文化、制度に関する情報をSNSやWebで発信する架空のブランドです。<br><br>
+          <span>デザインの特徴</span>：<br>
+          	<strong>•	タイポグラフィ×桜モチーフ</strong>：「J」「A」「Y」「I」「T」の文字を組み合わせ、Yの上に桜の花を添えることで、日本文化の象徴を表現。<br>
+          	<strong>•	カラー設計</strong>：信頼感を与えるブルーと、親しみやすさを感じさせるレッドを基調に配色。文化の架け橋となるブランドとして、安心感と温かみの両立を目指しました。<br>
+          	<strong>•	モックアップ展開</strong>：名刺、トートバッグ、看板など、複数のシーンでの展開を想定し、ブランドとしての視覚的一貫性を確保。</p>
+        <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
+      </div>
+
+      <div class="design-img">
+        <img src="images/jy_logo.jpg" alt="Logo design2" onclick="openModal(this, 'modal-logo2')">
+      </div>
+      <!-- モーダル2 -->
+      <div id="modal-logo2" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img-logo2">
+      </div>
+</div>
 </section>
 
-<!-- design section -->
-<section id="illustration" class="design fade-in">
+<!-- Illustration section -->
+<section id="illustration" class="design fade-in" style="background-color: #f9f9f9;">
   <h1><span>ILLUST</span>RATION</h1>
   <div class="design-container">
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
+    <div class="design-img">
+      <img src="images/vm.jpg" alt="Illustration1" onclick="openModal(this, 'modal-illustration1')">
     </div>
+
+    <!-- モーダル1 -->
+    <div id="modal-illustration1" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img-illustration1">
+    </div>
+
     <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
+      <h3>Vending Machine(自販機)</h3>
       <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
+      <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+      <span>デザインの特徴</span>：<br>
+      <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。<br>
+      <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br>
+      <strong>• モックアップ展開</strong>：マグカップ、エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+    </p>
+      <p class="tools">使用ツール：Adobe Illustrator</p>
     </div>
   </div>
 
+  <!-- 2つ目の作品 -->
   <div class="design-container">
-    <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
-      <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
-    </div>
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
-    </div>
-  </div>
+      <div class="design-info">
+        <h3>My ideal Flowers Shop（理想の花屋）</h3>
+        <p class="description">
+          <span>ブランド概要：</span><strong>JAYIT</strong>は、日本で生活するミャンマー人向けに、生活ルールや文化、制度に関する情報をSNSやWebで発信する架空のブランドです。<br><br>
+          <span>デザインの特徴：</span><br>
+          	<strong>•	タイポグラフィ×桜モチーフ</strong>：「J」「A」「Y」「I」「T」の文字を組み合わせ、Yの上に桜の花を添えることで、日本文化の象徴を表現。<br>
+          	<strong>•	カラー設計</strong>：信頼感を与えるブルーと、親しみやすさを感じさせるレッドを基調に配色。文化の架け橋となるブランドとして、安心感と温かみの両立を目指しました。<br>
+          	<strong>•	モックアップ展開</strong>：名刺、トートバッグ、看板など、複数のシーンでの展開を想定し、ブランドとしての視覚的一貫性を確保。</p>
+        <p class="tools">使用ツール：Adobe Illustrator</p>
+      </div>
+
+      <div class="design-img">
+        <img src="images/fs.jpg" alt="Illustration2" onclick="openModal(this, 'modal-illustration2')">
+      </div>
+      <!-- モーダル2 -->
+      <div id="modal-illustration2" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img-illustration2">
+      </div>
+</div>
 </section>
 
 <!-- Contact Section -->
@@ -113,9 +155,9 @@
 <section id="contact" class="contact fade-in">
   <h2>Contact<span>お問い合わせ</span></h2>
     <form action="https://formspree.io/f/meokbpnj" method="POST">
-    <input type="text" name="name" placeholder="お名前" required / style="margin-top: 20px;"><br><br>
-    <input type="email" name="email" placeholder="メールアドレス" required /><br><br>
-    <textarea name="message" placeholder="メッセージ" rows="5"></textarea>
+    <input type="text" name="name" placeholder="お名前" required style="margin-top: 20px;">
+    <input type="email" name="email" placeholder="メールアドレス" required style="margin-top: 20px;">
+    <textarea name="message" placeholder="メッセージ" rows="5" style="margin-top: 20px;"></textarea>
     <button type="submit">送信</button>
     </form>
 </section>

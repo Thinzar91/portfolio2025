@@ -114,3 +114,16 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 
 
 //js
+function openModal(img, modalId) {
+  const modal = document.getElementById(modalId);
+  const modalImg = modal.querySelector(".modal-content");
+  modalImg.src = img.src;
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach(modal => {
+    modal.style.display = "none";
+  });
+}

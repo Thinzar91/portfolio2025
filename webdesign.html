@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Works>Web・UI/UX デザイン</title>
+  <title>My Works | Web・UI/UXデザイン</title>
   <link rel="icon" sizes="500x500" href="images/favicon.ico" id="favicon">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
   <meta name="description" content="ポートフォリオのWebサイトです。">
@@ -32,7 +32,7 @@
       <!-- メニュー本体 -->
       <nav class="nav-menu" id="navMenu">
           <a href="index.html#about">About me</a>
-          <a href="index.html#experience">Experience</a>
+          <a href="index.html#experience">My Experience</a>
           <a href="myworks.html">My Works</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -40,87 +40,123 @@
   </header>
 
   <section class="myworks">
-  <p><a href="myworks.html">My Works</a> > Web & UI/UX Design</p>
-  <h2>Web & UI/UX Design<span>デザイン・ギャラリー</span></h2>
+  <p><a href="myworks.html">My Works</a> | <a href="#" class="highlight">Web & UI/UX Design</a> | <a href="visual1.html">Visual Ad Design</a> | <a href="visual2.html">Visual Art & Logo Design</a></p>
+  <h2>Web & UI/UX Design<span>Web・UI/UXデザイン</span></h2>
   <div class="filter-buttons">
     <a href="#web"><button class="filter-btn" data-filter="Web Design">Web Design</button></a>
     <a href="#uiux"><button class="filter-btn" data-filter="UI/UX Design">UI/UX Design</button></a>
   </div>
 </section>
 
-<!-- design section -->
-<section id="web" class="design">
+<!-- Web design section -->
+<section id="web" class="design fade-in" style="background-color: #fdfeff;">
   <h1><span>WEB</span> DESIGN</h1>
   <div class="design-container">
-    <div class="design-image">
-      <img src="images/m-bellesfleurs.png" alt="プロジェクト画像">
+    <div class="design-img">
+      <a href="https://www.belles-fleurs.com/maison/" target="_blank">
+        <img src="images/bellesfleurs.jpg" alt="Web design1"></a>
     </div>
-    <div class="design-info">
-      <h3>Maison Belles Fleurs</h3>
-      <p class="description">
-        前職では店舗運営管理システムを利用し、
-        商品ページ、カテゴリページなどページ作成・更新を
-        実施いたしました。<br>
-        2023年4月から大物案件によりブランドページを
-        立ち上げることになり、 無料ワイヤフレームを参考に
-        ブランドページ作成に着手できました。
-        その機会をきっかけにホームページの構造が理解できました。
 
-        作品タイトル：ブランドサイト
-        担当：Design / Coding
-        制作期間：1ヶ月間
-        コメント：フリーサイトのワイヤフレームを参考に、Webページ制作を１から作成（初経験）。
-        作成期間中、分からなかったことがたくさんあり、オンラインで探り探り作成し、
-        リーダーのデザインイメージ通りのサイトが形になりました。Bootstrapなど新たなスキルも身につけられました。
-        URL：https://www.belles-fleurs.com/maison/index.html
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / WordPress</p>
+    <div class="design-info">
+      <h3>Maison Belles fleurs</h3>
+      <p class="description">
+      <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+      <span>デザインの特徴</span>：<br>
+      <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。<br>
+      <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br>
+      <strong>• モックアップ展開</strong>：マグカップ、エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+    </p>
+      <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
     </div>
   </div>
 
+  <!-- 2つ目の作品 -->
   <div class="design-container">
-    <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
-      <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
-    </div>
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
-    </div>
+      <div class="design-info">
+        <h3>本多屋 | 和食処</h3>
+        <p class="description">
+          <span>ブランド概要</span>：<strong>JAYIT</strong>は、日本で生活するミャンマー人向けに、生活ルールや文化、制度に関する情報をSNSやWebで発信する架空のブランドです。<br><br>
+          <span>デザインの特徴</span>：<br>
+          	<strong>•	タイポグラフィ×桜モチーフ</strong>：「J」「A」「Y」「I」「T」の文字を組み合わせ、Yの上に桜の花を添えることで、日本文化の象徴を表現。<br>
+          	<strong>•	カラー設計</strong>：信頼感を与えるブルーと、親しみやすさを感じさせるレッドを基調に配色。文化の架け橋となるブランドとして、安心感と温かみの両立を目指しました。<br>
+          	<strong>•	モックアップ展開</strong>：名刺、トートバッグ、看板など、複数のシーンでの展開を想定し、ブランドとしての視覚的一貫性を確保。</p>
+        <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
+      </div>
+
+      <div class="design-img">
+        <a href="https://thinzar91.github.io/s-kadai1/" target="_blank"><img src="images/kadai1.jpg" alt="web design2"></a>
+      </div>
+</div>
+
+<!-- ３つ目の作品 -->
+<div class="design-container">
+  <div class="design-img">
+  <a href="https://thinzar91.github.io/s-kadai2/" target="_blank"><img src="images/kadai2.jpg" alt="Web design3"></a>
   </div>
+
+  <div class="design-info">
+    <h3>Le Café des Chats | ル・カフェ・デ・シャ</h3>
+    <p class="description">
+    <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+    <span>デザインの特徴</span>：<br>
+    <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。<br>
+    <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br>
+    <strong>• モックアップ展開</strong>：マグカップ、エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+  </p>
+    <p class="tools">使用ツール：Adobe Illustrator / Figma / Canva(Mockup)</p>
+  </div>
+</div>
 </section>
 
-<!-- design section -->
-<section id="uiux" class="design" style="background-color: #f9f9f9;">
+<!-- UI/UX section -->
+<section id="uiux" class="design fade-in" style="background-color: #f9f9f9;">
   <h1><span>UI/UX</span> DESIGN</h1>
   <div class="design-container">
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
+    <div class="design-img">
+      <img src="images/vm.jpg" alt="UI/UX1" onclick="openModal(this, 'modal-uiux1')">
     </div>
+
+    <!-- モーダル1 -->
+    <div id="modal-uiux1" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img-uiux1">
+    </div>
+
     <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
+      <h3>Vending Machine(自販機)</h3>
       <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
+      <span>ブランド概要</span>：<strong>eleGREENS</strong>は、ガーデニングを楽しむ人々に向けて、植物との暮らしをより豊かにするためのグッズ・アイデア・情報を届ける架空ブランドです。<br><br>
+      <span>デザインの特徴</span>：<br>
+      <strong>• タイポグラフィ×芽吹きモチーフ</strong>：「e」「G」を象った有機的なロゴに、芽が出るデザインを組み合わせることで、自然の成長と生命感を表現。<br>
+      <strong>• カラー設計</strong>：落ち着きと土の温もりを感じさせる赤茶と、植物のイメージを想起させるグリーンで構成。ナチュラルで安心感のあるブランドトーンを演出。<br>
+      <strong>• モックアップ展開</strong>：マグカップ、エプロン、看板など、園芸にまつわる日常生活シーンに自然と溶け込むように展開。
+    </p>
+      <p class="tools">使用ツール：Adobe Illustrator</p>
     </div>
   </div>
 
+  <!-- 2つ目の作品 -->
   <div class="design-container">
-    <div class="design-info">
-      <h3>プロジェクトタイトル</h3>
-      <p class="description">
-        このプロジェクトは〇〇を目的として制作されました。主な特徴は〇〇です。
-      </p>
-      <p class="tools">使用ツール：HTML / CSS / JavaScript / Figma</p>
-    </div>
-    <div class="design-image">
-      <img src="images/JY_logo.png" alt="プロジェクト画像">
-    </div>
-  </div>
+      <div class="design-info">
+        <h3>My ideal Flowers Shop（理想の花屋）</h3>
+        <p class="description">
+          <span>ブランド概要：</span><strong>JAYIT</strong>は、日本で生活するミャンマー人向けに、生活ルールや文化、制度に関する情報をSNSやWebで発信する架空のブランドです。<br><br>
+          <span>デザインの特徴：</span><br>
+          	<strong>•	タイポグラフィ×桜モチーフ</strong>：「J」「A」「Y」「I」「T」の文字を組み合わせ、Yの上に桜の花を添えることで、日本文化の象徴を表現。<br>
+          	<strong>•	カラー設計</strong>：信頼感を与えるブルーと、親しみやすさを感じさせるレッドを基調に配色。文化の架け橋となるブランドとして、安心感と温かみの両立を目指しました。<br>
+          	<strong>•	モックアップ展開</strong>：名刺、トートバッグ、看板など、複数のシーンでの展開を想定し、ブランドとしての視覚的一貫性を確保。</p>
+        <p class="tools">使用ツール：Adobe Illustrator</p>
+      </div>
+
+      <div class="design-img">
+        <img src="images/fs.jpg" alt="UI/UX2" <img src="images/jy_logo.jpg" onclick="openModal(this, 'modal-uiux2')">
+      </div>
+      <!-- モーダル2 -->
+      <div id="modal-uiux2" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img-uiuxn2">
+      </div>
+</div>
 </section>
 
 <!-- Contact Section -->
@@ -128,9 +164,9 @@
 <section id="contact" class="contact fade-in">
   <h2>Contact<span>お問い合わせ</span></h2>
     <form action="https://formspree.io/f/meokbpnj" method="POST">
-    <input type="text" name="name" placeholder="お名前" required / style="margin-top: 20px;"><br><br>
-    <input type="email" name="email" placeholder="メールアドレス" required /><br><br>
-    <textarea name="message" placeholder="メッセージ" rows="5"></textarea>
+    <input type="text" name="name" placeholder="お名前" required style="margin-top: 20px;">
+    <input type="email" name="email" placeholder="メールアドレス" required style="margin-top: 20px;">
+    <textarea name="message" placeholder="メッセージ" rows="5" style="margin-top: 20px;"></textarea>
     <button type="submit">送信</button>
     </form>
 </section>
